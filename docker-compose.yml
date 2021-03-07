@@ -1,0 +1,14 @@
+version: '3'
+
+networks:
+  basic:
+
+services:
+
+  world:
+    container_name: world
+    image: ocrserver
+    ports:
+      - "8081:8080"
+    networks:
+      - basic
